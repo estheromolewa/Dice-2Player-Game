@@ -1,0 +1,163 @@
+
+/* layout */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #1c1919;
+    
+}
+.main-wrap{
+    background: linear-gradient(90deg, rgba(140, 31, 23, 1) 5%, rgba(233, 56, 116, 1) 27%, rgba(210, 141, 136, 1) 53%, rgba(220, 149, 128, 1) 66%, rgba(207, 102, 77, 1) 87%);
+    padding: 10rem  20rem;  
+    filter: blur() ;
+    
+}
+
+main{
+    position: relative;
+    box-sizing: border-box;
+    background-color: #ffffff59;
+    backdrop-filter: blur(20px);
+    filter: blur();  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 4px 9px 15px black;
+    overflow: hidden;
+    transition: all 0.75s;
+    
+    
+}
+.players{
+    flex: 1;
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    transition: all 0.65s;
+}
+
+
+/* ELEMENTS */
+.player-active {
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player-active .text-P {
+font-weight: 700;
+}
+.player-active .score {
+font-weight: 700;
+}
+
+.player-active .current-score{
+opacity: 1;
+}
+
+.display-score{
+    margin-bottom: 5rem;
+    transition: all 0.75s;
+}
+
+.display-score h2{
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(197, 56, 56); ;
+    margin-top:0 ;
+}
+
+.text-P{
+    margin: 4rem 0 1rem 0;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 300;
+    font-size: 3rem;
+
+}
+
+
+
+p{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.current-score{
+    background-color:rgb(172, 48, 48) ;
+    border-radius: 25px;
+    width: 15vw;
+    text-align: center;
+    transition: all 0.75s;
+    margin-top: 5rem;
+    
+}
+
+/* ELEMENTS THAT ARE ABSOLUTE IN POSITION */
+.btn{
+    position: absolute;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #ffffff99;
+    backdrop-filter: blur(5px);
+    
+    
+}
+
+.dice{
+    position: absolute;
+    top: 8rem;
+    height: 5rem;
+    top: 10rem;
+}
+
+.btn-new {
+    top: 1.5rem;
+  }
+.btn-roll {
+    bottom: 20rem;
+  }
+.btn-hold {
+    bottom: 13rem;
+  }
+
+.btn:active {
+transform: translate(-10%, 3px);
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+outline: none;
+}
+
+.btn::first-letter {
+    font-size: 1.2rem;
+    display: inline-block;
+    
+}
+
+.hide{
+    display: none;   
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player-winner{
+    background-color: #2f2f2f;
+
+}
+
+.player-winner .score{
+    font-weight: 800;
+    color: rgba(207, 102, 77, 1);
+}
+
+
+.player-winner .text-P{
+    font-weight: 800;
+    color: rgba(207, 102, 77, 1);
+}
